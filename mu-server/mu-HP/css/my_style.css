@@ -19,3 +19,9 @@
 .text-right{
   text-align: right;
 }
+
+ul li{
+  /*改行のインデントをそろえるためのCSS*/
+  text-indent:-1em;
+  padding-left:1em;
+}
