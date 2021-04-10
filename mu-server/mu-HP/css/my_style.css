@@ -1,0 +1,21 @@
+.list-style-ring li:before{
+  content: "〇";
+}
+
+.list-style-point li:before{
+  content: "・";
+}
+
+.text-highlight{
+  /*テキストにマーカーハイライトをつけたいときに参照するクラス*/
+  background-color: #FFFA91;
+  font-weight: bold;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-right{
+  text-align: right;
+}

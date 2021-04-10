@@ -1,0 +1,130 @@
+/*ページ全般*/
+*{
+  margin: 0;
+  padding: 0;
+
+  color:#190E40;
+  text-align: center;
+}
+.text-color-red{
+  color: #E21C21;
+}
+
+.text-under{
+  /*テキストに下線を引くときに参照するクラス*/
+  border-bottom: solid 1px #190E40;
+}
+
+.text-under-red{
+  /*テキストに下線を引くときに参照するクラス*/
+  border-bottom: solid 1px #FF0000;
+}
+
+.text-highlight{
+  /*テキストにマーカーハイライトをつけたいときに参照するクラス*/
+  background-color: #FFFA91;
+}
+
+h1{
+  /*用途未定*/
+  font-size:120px ;
+}
+
+h2{
+  /*各コーナー(CONCEPT、PROGRAM等)見出し*/
+  font-size:50px ;
+}
+
+h3{
+  /*GROUPSやPROGRAMの団体名など*/
+  font-size: 30px;
+}
+
+p{
+  font-size: 17px;
+}
+
+.small{
+  /*もう少し悩むべきだけど、親要素より少し小さくしたいときに参照するクラス*/
+  /*GROUPSの「都道府県・声部」とか*/
+  font-size: 75%;
+}
+
+.preformed{
+  /*改行、スペース等をそのまま表示したいときに参照するクラス*/
+  white-space:pre;
+}
+
+/*ヘッダー*/
+.header-container{
+ padding: 10px 0px;/*ヘッダーのサイズ*/
+ /*お知らせ文不掲載時のヘッダーサイズ*/
+
+ background-color: #F7F7F7;
+}
+
+.header{
+
+}
+
+.header p{
+  margin: 10px 0px;/*掲載時のヘッダーサイズ追加分*/
+  width:auto;
+
+  /*ヘッダーにお知らせの掲載がない場合 display: none*/
+  /*display: none;*/
+}
+
+
+/*メインコンテンツ*/
+.main-wrapper{
+  height:500px;
+}
+
+.main-container{
+
+}
+
+/*メイン左*/
+.main-left{
+  width: 30%;
+  float:left;
+
+  /*background-color: red;*/
+}
+
+/*メイン中央*/
+.main-center{
+  width: 40%;
+  float: left;
+
+  /*background-color: blue;*/
+}
+
+
+.content-CONCEPT-text p{
+  text-align: left;
+
+}
+
+
+/*メイン右*/
+.main-right{
+  width: 30%;
+  float: right;
+
+  /*background-color: green;*/
+}
+
+
+/*フッター*/
+.footer-container{
+  clear: both;
+}
+
+.footer{
+
+  /*border-top: なんかそれっぽいの*/
+  background-color: #E8E8E8;
+
+}
