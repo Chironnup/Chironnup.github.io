@@ -1,9 +1,15 @@
 .list-style-ring li:before{
   content: "〇";
 }
+.list-style-ring li{
+  margin-top: 1em;
+}
 
 .list-style-point li:before{
   content: "・";
+}
+.list-style-point li{
+  margin-top: initial;
 }
 
 .text-highlight{
@@ -19,9 +25,24 @@
 .text-right{
   text-align: right;
 }
+.text-center{
+  text-align: center;
+}
 
 ul li{
   /*改行のインデントをそろえるためのCSS*/
   text-indent:-1em;
   padding-left:1em;
+}
+
+.small{
+  /*元のスタイルを初期化*/
+  font-size: initial;
+  color: initial;
+  letter-spacing: initial;
+
+  font-size: 75%;
+}
+.smaller{
+  font-size: 50%;
 }

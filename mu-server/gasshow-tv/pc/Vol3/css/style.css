@@ -6,6 +6,8 @@
   color:#190E40;
   text-align: center;
 }
+
+/***** テキスト系 *****/
 .text-color-red{
   color: #E21C21;
 }
@@ -24,6 +26,21 @@
   /*テキストにマーカーハイライトをつけたいときに参照するクラス*/
   background-color: #FFFA91;
 }
+.text-bold{
+  font-weight: bold;
+}
+.text-right{
+  text-align: right;
+}
+
+
+/***** リスト系 *****/
+ul li{
+  /*改行のインデントをそろえるためのCSS*/
+  text-indent:-1em;
+  padding-left:1em;
+}
+
 
 h1{
   /*用途未定*/
