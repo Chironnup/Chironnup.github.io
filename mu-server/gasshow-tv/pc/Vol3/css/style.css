@@ -29,18 +29,17 @@
 .text-bold{
   font-weight: bold;
 }
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .text-right{
   text-align: right;
 }
-
-
-/***** リスト系 *****/
-ul li{
-  /*改行のインデントをそろえるためのCSS*/
-  text-indent:-1em;
-  padding-left:1em;
-}
-
 
 h1{
   /*用途未定*/
@@ -72,6 +71,32 @@ p{
   white-space:pre;
 }
 
+
+
+/***** リスト系 *****/
+ul li{
+  /*改行のインデントをそろえるためのCSS*/
+  text-indent:-1em;
+  padding-left:1em;
+}
+
+.content-GROUPS ul{
+  list-style-type: none;
+}
+
+.content-GROUPS ul li img{
+  height: 1em;
+  /*float: right;*/
+}
+
+.content-GROUPS ul li img::after{
+  /*clear: both;*/
+}
+
+
+/***** ページコンテンツ *****/
+
+
 /*ヘッダー*/
 .header-container{
  padding: 10px 0px;/*ヘッダーのサイズ*/
@@ -93,7 +118,7 @@ p{
 }
 
 
-/*メインコンテンツ*/
+/* メインコンテンツ */
 .main-wrapper{
   height:500px;
 }
@@ -117,12 +142,17 @@ p{
 
   /*background-color: blue;*/
 }
+.content-TOP
 
 
+/* CONCEPT */
 .content-CONCEPT-text p{
   text-align: left;
 
 }
+
+/*GROUPS*/
+
 
 
 /*メイン右*/
