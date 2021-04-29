@@ -7,7 +7,31 @@
   text-align: center;
 }
 
-/***** テキスト系 *****/
+a{
+  text-decoration: none;
+}
+
+/***** テキスト・フォント系 *****/
+
+@font-face {
+	font-family: "chogokubosogothic";
+	src: url(../font/chogokubosogothic.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "YuGothicB";
+	src: url(../font/YuGothicB.otf) format("opentype");
+}
+
+p,h1,h2,h3{
+    font-family: "YuGothicB";
+    font-weight: bold;
+}
+
+ol li,.font-Helve{
+  font-family: "Helvetica Light","chogokubosogothic";
+}
+
 .text-color-red{
   color: #E21C21;
 }
@@ -15,6 +39,7 @@
 .text-under{
   /*テキストに下線を引くときに参照するクラス*/
   border-bottom: solid 1px #190E40;
+
 }
 
 .text-under-red{
@@ -63,7 +88,7 @@ p{
 .small{
   /*もう少し悩むべきだけど、親要素より少し小さくしたいときに参照するクラス*/
   /*GROUPSの「都道府県・声部」とか*/
-  font-size: 75%;
+  font-size: 82%;
 }
 
 .preformed{
@@ -93,6 +118,17 @@ ul li{
   /*clear: both;*/
 }
 
+.menu-bar ol{
+  list-style-type: none;
+  text-align: left;
+}
+
+.menu-bar ol li::after{
+  content: "〇"
+  /* javascriptで今いる位置に合わせてContentを変える */
+  /* もしかしたら画像指定かも */
+}
+
 
 /***** ページコンテンツ *****/
 
@@ -110,8 +146,8 @@ ul li{
 }
 
 .header p{
-  margin: 10px 0px;/*掲載時のヘッダーサイズ追加分*/
-  width:auto;
+  margin: 1em 0em 1em 0em;/*掲載時のヘッダーサイズ追加分*/
+
 
   /*ヘッダーにお知らせの掲載がない場合 display: none*/
   /*display: none;*/
@@ -120,11 +156,16 @@ ul li{
 
 /* メインコンテンツ */
 .main-wrapper{
-  height:500px;
+  /*height:500px;*/
 }
 
 .main-container{
 
+}
+.main-container::after{
+  content: "";
+	clear: both;
+	display: block;
 }
 
 /*メイン左*/
@@ -134,6 +175,11 @@ ul li{
 
   /*background-color: red;*/
 }
+/* social-bar */
+.logo-img{
+  width: 1.25em;
+}
+
 
 /*メイン中央*/
 .main-center{
@@ -142,17 +188,49 @@ ul li{
 
   /*background-color: blue;*/
 }
-.content-TOP
+
+/* TOP */
+.content-TOP{
+  margin-bottom: 3em;
+}
+
+.content-TOP-keyvisual{
+  width: 100%;
+}
+
+.content-TOP-schedule{
+  width: 100%;
+}
 
 
 /* CONCEPT */
+.content-CONCEPT{
+  margin-bottom: 3em;
+}
+
 .content-CONCEPT-text p{
   text-align: left;
 
 }
 
-/*GROUPS*/
+/* GROUPS */
+.content-GROUPS{
+  margin-bottom: 3em;
+}
 
+/* PROGRAM */
+.content-PROGRAM{
+  margin-bottom: 3em;
+}
+
+/* TICKETS */
+.content-TICKETS{
+  margin-bottom: 3em;
+}
+
+.content-TICKETS-text p{
+  text-align: left;
+}
 
 
 /*メイン右*/
@@ -167,11 +245,14 @@ ul li{
 /*フッター*/
 .footer-container{
   clear: both;
+  padding: 10px 0px;/*フッダーのサイズ*/
+  background-color: #E8E8E8;
 }
 
 .footer{
 
   /*border-top: なんかそれっぽいの*/
-  background-color: #E8E8E8;
+
+  margin: 1.5em 0em 1.5em 0em;
 
 }
