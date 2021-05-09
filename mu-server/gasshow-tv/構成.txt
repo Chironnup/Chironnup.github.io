@@ -1,5 +1,8 @@
-アクセス→index.html
+root　最新回のサイト
+ index.html
+ css
+  style.css
+ img
 
-index.htmlで、デバイスを確認して、対応するフォルダ(の最新回)へ自動で飛ばす
-
-モバイル版の実装は後回し。ひとまずPC版を実装
+ Volx(各回) 基本構成はそのままコピペ
+  index.html
